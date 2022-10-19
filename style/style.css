@@ -243,7 +243,7 @@ body {
 .main_section:after {
   position: absolute;
   content: "";
-  top: 106px;
+  top: 0px;
   padding: 0;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 2;
