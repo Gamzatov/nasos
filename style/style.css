@@ -63,7 +63,7 @@ body {
   letter-spacing: 0.1em;
   margin-bottom: 0px;
 }
-.vector{
+.vector {
   position: absolute;
   right: 10%;
   bottom: 0%;
@@ -71,7 +71,7 @@ body {
   width: 200px;
   height: 200px;
 }
-.main_text{
+.main_text {
   z-index: 2;
   position: relative;
 }
@@ -103,7 +103,7 @@ body {
   /* background-attachment: fixed; */
   height: 100vh;
   background-size: cover;
-  background-position: center ;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .grid_section {
@@ -247,36 +247,34 @@ body {
 }
 .main_section_blur {
   position: relative;
-  
-z-index: 3;
+
+  z-index: 3;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
 }
-nav{
+nav {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
 }
-.sec_t{
+.sec_t {
   /* background: url('../assets/sec2.jpg'); */
   position: relative;
   background-size: cover;
   height: 500px;
 }
-.text_wrapper{
+.text_wrapper {
   padding: 30px;
   max-width: 500px;
   border-radius: 20px;
-  background-color: rgb(250, 207, 126, .4);
-  backdrop-filter: blur(20px);
 }
-.sec_sec > img{
+.sec_sec > img {
   max-width: 400px;
   border-radius: 20px;
 }
-.sec_sec{
+.sec_sec {
   position: relative;
 }
 /* .sec_sec::after{
@@ -287,33 +285,57 @@ nav{
   left: -30px;
   background: url('../assets/img/air-water.png');
 } */
-.grid_absolute_img{
+.grid_absolute_img {
   position: absolute;
   bottom: -20px;
   left: -20px;
 }
-.sec_t{
-  background: url('../assets/curved-lines-r.png');
+.sec_t {
+  /* background: url('../assets/a.png'); */
   padding: 30px 0;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  /* background-position: right; */
 }
-.grid_absolute_img > img{
+
+.grid_absolute_img > img {
   max-width: 350px;
 }
-.sec_title{
+.sec_title {
   font-size: 2rem;
+  position: relative;
   text-align: center;
   margin-top: 0;
 }
-.sec_subtitle{
+.how-works-small {
+  position: absolute;
+  height: 400px;
+  z-index: -1;
+  stroke: rgb(250, 207, 126);
+  stroke-width: 0.79px;
+  bottom: -180px;
+  fill: none;
+}
+.sec_title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 20%;
+  height: 2px;
+  background-color: rgb(250, 207, 126);
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.sec_subtitle {
   font-size: 1.7rem;
   color: #666;
   text-align: center;
 }
-.second_section{
-  background: url('../assets/curved-lines.png');
+.second_section {
+  background: url("../assets/curved-lines.png");
   background-repeat: no-repeat;
   background-size: contain;
   padding: 30px 0;
@@ -325,8 +347,13 @@ nav{
   padding: 0;
   /* background-color: rgba(0, 0, 0, 0.864); */
   /* background: radial-gradient(rgb(230,131,44) 0%,rgba(91, 71, 33, 0.016) 0%,orange 100%); */
-  background: linear-gradient(0deg, rgba(0,0,0,0.752334210051208) 0%, rgba(0,0,0,0.5842669831604517) 60%, rgba(0,212,255,0.012838411731880273) 98%);
-  opacity: .6;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.752334210051208) 0%,
+    rgba(0, 0, 0, 0.5842669831604517) 60%,
+    rgba(0, 212, 255, 0.012838411731880273) 98%
+  );
+  opacity: 0.6;
   z-index: 2;
   width: 100%;
   height: 100%;
