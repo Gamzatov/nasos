@@ -259,6 +259,22 @@ nav{
   max-width: 1240px;
   margin: 0 auto;
 }
+.sec_title{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0;
+}
+.sec_subtitle{
+  font-size: 1.7rem;
+  color: #666;
+  text-align: center;
+}
+.second_section{
+  background: url('../assets/curved-lines.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 30px 0;
+}
 .main_section:after {
   position: absolute;
   content: "";
