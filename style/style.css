@@ -696,7 +696,10 @@ nav {
 html {
   scroll-behavior: smooth;
 }
-.scroll-top {
+.none{
+  display: none;
+}
+.btnOn {
   position: fixed;
   bottom: 60px;
   z-index: 99;
