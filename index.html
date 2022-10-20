@@ -24,7 +24,7 @@
                         </div>
                     </div>
                     <div class="nav_btn">
-                        <button class="main_btn ">KNOPKA</button>
+                        <button class="main_btn" onclick="openPop()">KNOPKA</button>
                     </div>
                     <div class="contacts">
                         <div class="contacts__numbers">
@@ -110,7 +110,7 @@
             </div>
             <div class="button_wrapper">
                 <a href="#form">
-                    <button class="main_btn">
+                    <button onclick="openPop()" class="main_btn">
                         БЕЗКОШТОВНА <br>
                         КОНЦЕПЦІЯ ПРОЄКТУ
                     </button>
@@ -364,6 +364,28 @@
         </div>
     </div>
 </div>
+<div class="overlay" id="over">
+    <div class="pop_inner">
+        <div class="pop_content">
+            <div class="btn">
+                <button onclick="closePop()" class="close_pop">
+                    <ion-icon name="close-circle-outline"></ion-icon>
+                </button>
+            </div>
+            <h3 style="text-align: center; color: #666;">
+                Заповніть форму нижче, та ми зв'яжемося з Вами в найближчий час.
+            </h3>
+            <form action="#" class="form">
+                <input type="text" required placeholder="Ім'я">
+                <input type="text" required placeholder="E-mail">
+                <input type="text" required placeholder="Номер телефона">
+                <textarea name="message" placeholder="Повідомлення"></textarea>
+                <button class="main_btn">Надіслати</button>
+            </form>
+        </div>
+
+    </div>
+</div>
 <script src="./js/index.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" id='jquery-js'></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -417,6 +439,16 @@
         // console.log('close')
     };
 </script>
+<script>
+    let pop = document.getElementById('over');
+    function openPop() {
+        pop.style.display = 'block'
+    }
+    function closePop() {
+        pop.style.display = 'none'
+    }
+</script>
+
 </body>
 
 </html>
