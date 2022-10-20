@@ -4,10 +4,14 @@
 body {
   padding: 0;
   margin: 0;
+  
 }
 * {
   font-family: "Comfortaa", cursive;
   font-family: "Montserrat", sans-serif;
+}
+.how-works-small{
+  overflow: hidden;
 }
 .logo_subtitle > p {
   font-size: 30px;
