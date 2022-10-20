@@ -564,7 +564,26 @@ nav {
   font-size: 28px;
   margin: 0 auto;
 }
+.f_expl{
+  background-color: rgb(250, 207, 126, 0.2);
+  padding: 30px;
+}
 
+.expl_text{
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+}
+.expl_text > p{
+  font-size: 14px;
+  text-align: left;
+  color: rgb(46, 45, 45);
+}
+.expl_info{
+  font-size: 14px;
+  color: rgb(46, 45, 45);
+}
 @media (max-width: 660px) {
   .add_info_wrapper > div > p {
     font-size: 13px;
@@ -572,6 +591,9 @@ nav {
   .right_head {
     text-align: right !important;
   }
+}
+.expl_list {
+  list-style: none;
 }
 /* .water-summer {
   display: flex;
