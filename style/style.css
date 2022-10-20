@@ -630,6 +630,9 @@ nav {
   text-decoration: none;
   color: #111;
 }
+.grid_absolute_img > svg{
+  overflow: hidden;
+}
 @media (max-width: 762px) {
   .mob_attention {
     display: block;
