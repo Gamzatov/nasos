@@ -556,7 +556,7 @@ nav {
   backdrop-filter: blur(10px);
   z-index: 99;
 }
-.close_pop{
+.close_pop {
   position: absolute;
   top: 0;
   right: 0;
@@ -564,9 +564,9 @@ nav {
   border: none;
   font-size: 30px;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
-.close_pop:hover{
+.close_pop:hover {
   color: #1055cc;
 }
 .pop_inner {
@@ -585,14 +585,14 @@ nav {
   border-radius: 20px;
   padding: 30px;
 }
-.overlay{
+.overlay {
   display: none;
 }
-.form > button{
+.form > button {
   width: 100%;
   margin-top: 20px;
 }
-.form > textarea{
+.form > textarea {
   width: 90%;
   padding: 10px;
   display: block;
@@ -602,7 +602,7 @@ nav {
   border: 2px solid rgba(102, 102, 102, 0.297);
   border-radius: 10px;
 }
-.form > input{
+.form > input {
   display: block;
   margin: 10px auto;
   border: 2px solid rgba(102, 102, 102, 0.297);
@@ -693,16 +693,37 @@ nav {
   width: 50%;
   background-color: #fff;
 }
-
+html {
+  scroll-behavior: smooth;
+}
+.scroll-top {
+  position: fixed;
+  bottom: 60px;
+  z-index: 99;
+  right: 30px;
+  border: none;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px 10px 0 10px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+  background-color: #1055cc;
+  color: rgb(250, 207, 126);
+  transition: 0.2s;
+}
+.scroll-top:hover {
+  color: #1055cc;
+  background-color: rgb(250, 207, 126);
+}
 .mob_attention {
   display: none;
 }
-.mob_social{
+.mob_social {
   max-width: 250px;
   margin-left: 40px;
   margin-top: 30px;
 }
-.mob_social > a{
+.mob_social > a {
   font-size: 50px;
 }
 .share_text > p {
@@ -762,7 +783,7 @@ nav {
     padding: 10px;
     margin-top: 30px;
   }
-  .pop_content{
+  .pop_content {
     width: 75%;
   }
   .mob_nav {
