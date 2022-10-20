@@ -633,6 +633,9 @@ nav {
 .grid_absolute_img > svg{
   overflow: hidden;
 }
+.f_flow{
+  grid-template-columns: 1fr .6fr;
+}
 @media (max-width: 762px) {
   .mob_attention {
     display: block;
@@ -708,6 +711,7 @@ nav {
     gap: 0px;
     padding: 10px;
   }
+
   .grid_section_text {
     background: rgb(250, 207, 126, 0.8);
     backdrop-filter: blur(20px);
