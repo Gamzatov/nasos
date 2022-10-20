@@ -59,8 +59,34 @@
                 </div>
             </div>
         </nav>
-        <div class="float_btn_wrapper">
-            phone
+        <div class="float_btn_wrapper" onclick="toggle()">
+            <ion-icon name="call-outline"></ion-icon>
+        </div>
+        <div class="mob_nav" id="nav">
+            <div class="close">
+                <button class="c_btn" onclick="off()">
+                    <ion-icon name="close-circle-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="logo_wrapper mob_logo">
+                <div class="main_logo_wrapper ">
+                    <img src="./assets/logo-b.png" alt="">
+                </div>
+                <div class="logo_subtitle">
+                    <p>комфортна надійність </p>
+                </div>
+            </div>
+            <ul class="phone_list">
+                <li>
+                    <a href="tel:+380731695775" class="contacts__tel">+380 73 169 5775</a>
+                </li>
+                <li>
+                    <a href="tel:+380961695775" class="contacts__tel">+380 96 169 5775</a>
+                </li>
+                <li>
+                    <a href="tel:+380991695775" class="contacts__tel">+380 99 169 5775</a>
+                </li>
+            </ul>
         </div>
         <div class="container">
             <div class="main_text">
@@ -296,6 +322,17 @@
             }
         });
     });
+</script>
+<script>
+    let nav = document.getElementById('nav');
+    function toggle(){
+        nav.style.display = 'block';
+        console.log(nav.style.display);
+    };
+    function off(){
+        nav.style.display = 'none';
+        // console.log('close')
+    };
 </script>
 </body>
 

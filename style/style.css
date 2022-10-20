@@ -228,7 +228,7 @@ body {
     position: relative;
     z-index: 2;
   }
- 
+
   .share_img_wrapper {
     /* flex-direction: column; */
     align-items: center;
@@ -505,10 +505,10 @@ nav {
   .air-watter-sub {
     flex-direction: column;
   }
-  .summer_text{
+  .summer_text {
     width: 50%;
   }
-  .summer_img_wrapper{
+  .summer_img_wrapper {
     width: 50%;
   }
   .water-summer {
@@ -612,9 +612,64 @@ nav {
 .float_btn_wrapper {
   display: none;
 }
+.mob_nav {
+  display: none;
+}
+.none {
+  display: none;
+}
+.phone_list {
+  padding-left: none;
+  list-style: none;
+}
+.phone_list > li {
+  margin: 20px auto;
+  font-size: 20px;
+}
+.phone_list > li > a {
+  text-decoration: none;
+  color: #111;
+}
 @media (max-width: 762px) {
   .mob_attention {
     display: block;
+  }
+  .mob_nav {
+    /* display: block; */
+    position: fixed;
+    z-index: 99;
+    background: #fff;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+  .close{
+    position: relative;
+   
+  }
+  .c_btn{
+    position: absolute;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #111;
+    top: 20px;
+  }
+  .mob_logo{
+    align-items:flex-start;
+    display: block;
+  }
+  .float_btn_wrapper {
+    font-size: 30px;
+    background-color: rgb(250, 207, 126);
+    padding: 10px 10px 0 10px;
+    border-radius: 10px;
+    z-index: 5;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
   }
   .grid_absolute_img > img {
     max-width: 350px;
@@ -628,7 +683,7 @@ nav {
   .grid_img {
     margin-top: 30px;
   }
-  .air_holder::after{
+  .air_holder::after {
     width: 72%;
     right: 30px;
     bottom: -24px;
@@ -692,10 +747,10 @@ nav {
     padding: 30px;
     border-radius: 20px;
   }
-  .text_wrapper{
+  .text_wrapper {
     padding: 20px;
   }
-  .grid_section{
+  .grid_section {
     margin-bottom: 0;
     margin-top: 0;
   }
@@ -710,10 +765,10 @@ nav {
     width: 100%;
     align-items: center;
   }
-  .summer_img_wrapper{
+  .summer_img_wrapper {
     width: 100%;
   }
-  .summer_text{
+  .summer_text {
     width: 100%;
   }
   .head_sub > p,
