@@ -123,7 +123,30 @@ body {
 .summer_img_wrapper > img {
   max-width: 100%;
 }
-
+.summer{
+  position: relative;
+}
+.summer:before{
+  position: absolute;
+  content: 'Літо';
+  top: 0;
+  font-weight: 300;
+  color: #666;
+  font-size: 22px;
+  left: 0;
+}
+.winter{
+  position: relative;
+}
+.winter:before{
+  position: absolute;
+  content: 'Зима';
+  top: 0;
+  font-weight: 300;
+  color: #666;
+  font-size: 22px;
+  left: 0;
+}
 .air_holder:after {
   position: absolute;
   content: "";
