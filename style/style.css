@@ -108,8 +108,26 @@ body {
 }
 .grid_section {
   display: grid;
+  gap: 80px;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+}
+.air_holder{
+  position: relative;
+}
+.air_holder:after{
+  position: absolute;
+  content: '';
+  bottom: 10px;
+  right: -50px;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  background: url('../assets/img/air-air-2.png');
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+
 }
 .grid_img > img {
   text-align: center;
@@ -310,6 +328,11 @@ nav {
   margin-top: 70px;
   margin-bottom: 120px;
 }
+.grid_img > img{
+  border-radius: 20px;
+  width: 100%;
+}
+
 .text_wrapper{
   background: #fff;
 /* height: 100%; */
@@ -551,7 +574,7 @@ padding: 38px 60px 44px;
   }
   .grid_section {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 0px;
     padding: 10px;
   }
   .grid_section_text {
