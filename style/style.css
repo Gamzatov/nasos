@@ -112,22 +112,30 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
-.air_holder{
+.air_holder {
   position: relative;
 }
-.air_holder:after{
+.air-watter-sub {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.summer_img_wrapper > img {
+  max-width: 100%;
+}
+
+.air_holder:after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: 10px;
   right: -50px;
   width: 100%;
   max-width: 400px;
   height: 100%;
-  background: url('../assets/img/air-air-2.png');
+  background: url("../assets/img/air-air-2.png");
   background-position: center bottom;
   background-size: contain;
   background-repeat: no-repeat;
-
 }
 .grid_img > img {
   text-align: center;
@@ -324,25 +332,24 @@ nav {
 .grid_section_text > p {
   line-height: 30px;
 }
-.grid_section{
+.grid_section {
   margin-top: 70px;
   margin-bottom: 120px;
 }
-.grid_img > img{
+.grid_img > img {
   border-radius: 20px;
   width: 100%;
 }
 
-.text_wrapper{
+.text_wrapper {
   background: #fff;
-/* height: 100%; */
-box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
-padding: 38px 60px 44px;
+  /* height: 100%; */
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  padding: 38px 60px 44px;
 }
 .grid_section_text {
   background: #fff;
   /* height: 60%; */
-  height: 100%;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
   padding: 18px 20px 24px;
   border-radius: 20px;
@@ -398,10 +405,21 @@ padding: 38px 60px 44px;
   height: 38px;
   left: 0;
 }
+.summer_text {
+  text-align: left;
+}
 .second_section {
   position: relative;
   padding: 30px 0;
 }
+.water-summer {
+  width: 50%;
+}
+.left_arrow {
+  font-size: 14px;
+  color: #666;
+}
+
 .second_section:after {
   position: absolute;
   content: "";
@@ -412,7 +430,7 @@ padding: 38px 60px 44px;
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.2;
   min-height: 500px;
   top: 0;
   left: 0;
@@ -534,9 +552,9 @@ padding: 38px 60px 44px;
   color: #666;
   padding-left: 20px;
 }
-.additional_info > p::after{
+.additional_info > p::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 30%;
   left: 0;
   background-color: rgb(250, 207, 126);
