@@ -300,7 +300,15 @@ nav {
 
 .grid_absolute_img > img {
   width: 100%;
-  max-width: 350px;
+  max-width: 500px;
+}
+.text_wrapper>p,
+.grid_section_text > p{
+  line-height: 30px;
+}
+.f_letter{
+  font-size: 20px;
+  font-weight: 600;
 }
 .sec_title {
   font-size: 2rem;
@@ -314,7 +322,8 @@ nav {
   z-index: -1;
   stroke: rgb(250, 207, 126);
   stroke-width: 0.79px;
-  bottom: -180px;
+  bottom: -177px;
+  right: -160px;
   fill: none;
 }
 .sec_title:after {
