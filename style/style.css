@@ -573,11 +573,11 @@ nav {
     text-align: right !important;
   }
 }
-.water-summer {
+/* .water-summer {
   display: flex;
   width: 100%;
   align-items: center;
-}
+} */
 .swiper-slide {
   width: 50%;
   background-color: #fff;
