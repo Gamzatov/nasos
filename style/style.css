@@ -46,7 +46,11 @@ body {
 }
 .nav_container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+.nav_btn{
+  display: none;
 }
 .logo_wrapper {
   align-items: center;
@@ -484,17 +488,7 @@ nav {
 }
 .main_btn:hover {
   color: #fff;
-  background: linear-gradient(
-    135deg,
-    #09863b,
-    #279039,
-    #3d9a35,
-    #50a431,
-    #63ad2b,
-    #77b623,
-    #8bbf19,
-    #a0c809
-  );
+  background: #1055cc;
 }
 @media (max-width: 762px) {
   .attention {
@@ -563,6 +557,13 @@ nav {
 .active > .container > .nav_container > .logo_wrapper > .logo_subtitle > p {
   font-size: 28px;
   margin: 0 auto;
+}
+.active > .container > .nav_container > .nav_btn {
+ display: block;
+}
+.main_btn{
+  border-radius: 10px;
+  transition: .3s;
 }
 .f_expl {
   background-color: rgb(250, 207, 126, 0.2);
