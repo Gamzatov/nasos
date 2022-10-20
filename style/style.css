@@ -302,11 +302,27 @@ nav {
   width: 100%;
   max-width: 500px;
 }
-.text_wrapper>p,
-.grid_section_text > p{
+.text_wrapper > p,
+.grid_section_text > p {
   line-height: 30px;
 }
-.f_letter{
+.grid_section{
+  margin-top: 30px;
+}
+.text_wrapper{
+  background: #fff;
+/* height: 100%; */
+box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+padding: 38px 60px 44px;
+}
+.grid_section_text {
+  background: #fff;
+  height: 100%;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  padding: 18px 20px 24px;
+  border-radius: 20px;
+}
+.f_letter {
   font-size: 20px;
   font-weight: 600;
 }
@@ -320,6 +336,7 @@ nav {
   position: absolute;
   height: 400px;
   z-index: -1;
+  opacity: 0.4;
   stroke: rgb(250, 207, 126);
   stroke-width: 0.79px;
   bottom: -177px;
@@ -347,21 +364,33 @@ nav {
   margin: 0 auto;
   position: relative;
 }
-.sec_subtitle:before{
-  content: '';
+.sec_subtitle:before {
+  content: "";
   position: absolute;
-  background: url('../assets/svg/dots-bg.svg');
+  background: url("../assets/svg/dots-bg.svg");
   top: 0;
   width: 38px;
   height: 38px;
   left: 0;
-
 }
 .second_section {
+  position: relative;
+  padding: 30px 0;
+}
+.second_section:after {
+  position: absolute;
+  content: "";
   background: url("../assets/curved-lines.png");
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 30px 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  min-height: 500px;
+  top: 0;
+  left: 0;
 }
 .main_section:after {
   position: absolute;
@@ -402,7 +431,6 @@ nav {
     z-index: 2;
   }
 
-
   .share_img_wrapper {
     /* flex-direction: column; */
     align-items: center;
@@ -424,8 +452,8 @@ nav {
   justify-content: space-between;
 }
 .active {
-  transition: .2s;
-  background-color: rgba(0, 166, 235, .7);
+  transition: 0.2s;
+  background-color: rgba(0, 166, 235, 0.7);
   backdrop-filter: blur(20px);
   border-radius: 20px;
   padding: 0 10px;
@@ -439,10 +467,15 @@ nav {
   left: 50%;
   transform: translate(-50%, 0%);
 }
-.active > .container > .nav_container > .logo_wrapper > .main_logo_wrapper > img{
+.active
+  > .container
+  > .nav_container
+  > .logo_wrapper
+  > .main_logo_wrapper
+  > img {
   max-width: 150px;
 }
-.active > .container > .nav_container > .logo_wrapper > .logo_subtitle > p{
+.active > .container > .nav_container > .logo_wrapper > .logo_subtitle > p {
   font-size: 28px;
   margin: 0 auto;
 }
@@ -467,20 +500,49 @@ nav {
 .share_text > p {
   font-size: 14px;
 }
-
+.additional_info {
+  padding: 30px;
+  text-align: center;
+}
+.additional_info > p {
+  font-size: 14px;
+  color: #666;
+}
+.float_btn_wrapper {
+  display: none;
+}
 @media (max-width: 762px) {
   .mob_attention {
     display: block;
   }
-  .grid_absolute_img > img{
+  .grid_absolute_img > img {
     max-width: 250px;
   }
-  .grid_section{
-    grid-template-columns: 1fr;
-    padding: 30px;
+  .logo_wrapper {
+    flex-direction: column;
   }
-  .grid_section_text{
-    background: rgb(250, 207, 126, .4);
+  .logo_subtitle > p {
+    margin: 0;
+  }
+  .text_wrapper {
+    padding: 0;
+  }
+  .add_wrapper {
+    padding: 10px;
+  }
+  .additional_info {
+    padding: 20px;
+  }
+  .additional_info > p {
+    color: #fff;
+  }
+  .grid_section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 10px;
+  }
+  .grid_section_text {
+    background: rgb(250, 207, 126, 0.8);
     backdrop-filter: blur(20px);
     padding: 20px;
     border-radius: 20px;
@@ -493,19 +555,32 @@ nav {
   }
   .attention_descktop {
     display: none;
+    z-index: 999;
+  }
+  .float_btn_wrapper {
+    position: fixed;
+    top: 20px;
+    display: block;
+    right: 10px;
   }
   .main_text > h1,
   .sub_part > p {
     font-size: 5rem;
   }
+  .main_logo_wrapper > img {
+    max-width: 200px;
+  }
+  .logo_subtitle > p {
+    font-size: 22px;
+  }
 
   .main {
     height: 100%;
   }
-  .additional_info{
-    background-color: rgba(0, 166, 235, .7);
+  .additional_info {
+    background-color: rgba(0, 166, 235, 0.9);
     color: #fff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 20px;
   }
 }
