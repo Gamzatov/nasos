@@ -24,7 +24,7 @@
                         </div>
                     </div>
                     <div class="nav_btn">
-                        <button class="main_btn" onclick="openPop()">KNOPKA</button>
+                        <button class="main_btn" style="font-size:14px" onclick="openPop()">Замовити безкоштовний розрахунок</button>
                     </div>
                     <div class="contacts">
                         <div class="contacts__numbers">
@@ -113,6 +113,25 @@
                     </svg>
                 </a>
             </div>
+            <div class="pop_content" style="position: static; transform:none">
+                <!-- <div class="btn">
+                    <button onclick="closePop()" class="close_pop">
+                        <ion-icon name="close-circle-outline"></ion-icon>
+                    </button>
+                </div> -->
+                <h3 style="text-align: center; color: #666;">
+                    Заповніть форму нижче, та ми зв'яжемося з Вами в найближчий час.
+                </h3>
+                <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, './js/send.php')"
+                    class="form">
+                    <input type="text" required placeholder="Ім'я">
+                    <input type="text" required placeholder="E-mail">
+                    <input type="text" required placeholder="Номер телефона">
+                    <input type="file" name="myfile[]" multiple id="myfile">
+                    <textarea name="message" placeholder="Повідомлення"></textarea>
+                    <button class="main_btn">Надіслати</button>
+                </form>
+            </div>
         </div>
         <div class="container">
             <div class="main_text">
@@ -144,14 +163,11 @@
 </div>
 <div class="second_section">
     <div class="container">
-        <p class="sec_title">
-            Типи Тепловіх Насосів під Ключ
-        </p>
         <p class="info">
             Для житлових приміщень
         </p>
         <p class="sec_subtitle">
-            ПОВІТРЯ-ВОДА
+            ПОВІТРЯ - ВОДА
         </p>
         <div class="grid_section f_flow">
             <div class="grid_img">
@@ -257,7 +273,7 @@
             Для комерційних об'єктів
         </p>
         <p class="sec_subtitle">
-            ПОВІТРЯ-ВОДА
+            ПОВІТРЯ - ВОДА
         </p>
         <div class="grid_section air-water-comer">
             <div class="grid_img air-water_el">
@@ -368,8 +384,8 @@
             <!-- <p class="info">
                 Для комерційних об'єктів
             </p> -->
-            <p class="sec_subtitle">
-                ПОВІТРЯ-ПОВІТРЯ
+            <p class="sec_subtitle" style="margin-top: 60px;">
+                ПОВІТРЯ - ПОВІТРЯ
             </p>
             <div class="grid_section">
                 <div class="grid_img">

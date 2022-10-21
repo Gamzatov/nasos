@@ -148,7 +148,7 @@ body {
   position: absolute;
   content: "Літо";
   top: 0;
-  font-weight: 300;
+  font-weight: 500;
   color: #666;
   font-size: 22px;
   left: 0;
@@ -166,7 +166,7 @@ body {
   position: absolute;
   content: "Зима";
   top: 0;
-  font-weight: 300;
+  font-weight: 500;
   color: #666;
   font-size: 22px;
   left: 0;
