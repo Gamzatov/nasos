@@ -139,7 +139,7 @@ body {
 }
 .water_item{
   position: absolute;
-  bottom: -120px;
+  bottom: 212px;
   right: -140px;
   width: 100%;
   max-width: 300px !important;
@@ -401,7 +401,9 @@ nav {
 }
 .additional_img_text{
   display: flex;
+  column-gap: 30px;
   list-style: arrow;
+  margin-top: 50px;
   
 }
 .text_wrapper {
