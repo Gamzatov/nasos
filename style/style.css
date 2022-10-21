@@ -550,6 +550,9 @@ nav {
     position: relative;
     z-index: 2;
   }
+  .s_height{
+    margin-top: 30px;
+  }
   .grid_section{
     grid-template-areas: 
     "s"
