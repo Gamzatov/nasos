@@ -863,6 +863,7 @@ html {
 }
 .grid_absolute_img > svg {
   overflow: hidden;
+
 }
 .f_flow {
   grid-template-columns: 1fr 0.8fr;
