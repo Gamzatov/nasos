@@ -143,11 +143,17 @@ body {
 }
 .water_item {
   position: absolute;
-  bottom: 212px;
+  bottom: -75px;
   right: -140px;
   width: 100%;
   max-width: 300px !important;
 }
+.mob_flex{
+  gap: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
 .summer:before {
   position: absolute;
   content: "Літо";
@@ -384,8 +390,8 @@ nav {
   line-height: 30px;
 }
 .grid_section {
-  margin-top: 70px;
-  margin-bottom: 120px;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 .air-water-comer {
   grid-template-columns: 1fr 0.7fr;
@@ -408,7 +414,6 @@ nav {
   column-gap: 30px;
   list-style: arrow;
   margin-top: 50px;
-  grid-area: water_list;
 }
 
 .text_wrapper {
@@ -535,6 +540,9 @@ nav {
 }
 .grid_section_text{
   grid-area: t;
+}
+.none{
+  display: none;
 }
 @media (max-width: 762px) {
   .attention {
@@ -852,6 +860,7 @@ html {
 .f_flow {
   grid-template-columns: 1fr 0.6fr;
   margin-bottom: 0;
+  gap: 30px;
 }
 @media (max-width: 762px) {
   .mob_attention {
