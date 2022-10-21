@@ -692,6 +692,27 @@ nav {
   border: 2px solid rgba(102, 102, 102, 0.297);
   border-radius: 10px;
 }
+.form_down > textarea{
+  width: 90%;
+  padding: 10px;
+  display: block;
+  resize: none;
+  margin: 0 auto;
+  margin: 10px auto;
+  border: 2px solid rgba(102, 102, 102, 0.297);
+  border-radius: 10px;
+  max-width: 400px;
+}
+.form_down > input{
+  display: block;
+  margin: 10px auto;
+  border: 2px solid rgba(102, 102, 102, 0.297);
+  border-radius: 10px;
+  padding: 10px;
+  /* max-width: 300px; */
+  width: 90%;
+  max-width: 400px;
+}
 .form > input {
   display: block;
   margin: 10px auto;
