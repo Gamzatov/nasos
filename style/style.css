@@ -134,6 +134,16 @@ body {
 .summer {
   position: relative;
 }
+.air-water_el{
+  position: relative;
+}
+.water_item{
+  position: absolute;
+  bottom: -120px;
+  right: -140px;
+  width: 100%;
+  max-width: 300px !important;
+}
 .summer:before {
   position: absolute;
   content: "Літо";
@@ -373,6 +383,9 @@ nav {
   margin-top: 70px;
   margin-bottom: 120px;
 }
+.air-water-comer{
+  grid-template-columns: 1fr .6fr;
+}
 .grid_img > img {
   border-radius: 20px;
   width: 100%;
@@ -499,6 +512,12 @@ nav {
     grid-template-columns: 1fr;
     position: relative;
     z-index: 2;
+  }
+  .water_item{
+    display: none;
+  }
+  .how-works-small{
+    display: none;
   }
   .air-watter-sub {
     flex-direction: column;
