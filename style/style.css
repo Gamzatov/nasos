@@ -384,13 +384,26 @@ nav {
   margin-bottom: 120px;
 }
 .air-water-comer{
-  grid-template-columns: 1fr .6fr;
+  grid-template-columns: 1fr .7fr;
 }
 .grid_img > img {
   border-radius: 20px;
   width: 100%;
 }
-
+.text_list{
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+}
+.text_list > li > p{
+  color: #666;
+  font-size: 14px;
+}
+.additional_img_text{
+  display: flex;
+  list-style: arrow;
+  
+}
 .text_wrapper {
   background: #fff;
   /* height: 100%; */
@@ -506,6 +519,9 @@ nav {
 .main_btn:hover {
   color: #fff;
   background: #1055cc;
+}
+.list{
+  list-style: none;
 }
 @media (max-width: 762px) {
   .attention {
