@@ -4,13 +4,12 @@
 body {
   padding: 0;
   margin: 0;
-  
 }
 * {
   font-family: "Comfortaa", cursive;
   font-family: "Montserrat", sans-serif;
 }
-.how-works-small{
+.how-works-small {
   overflow: hidden;
 }
 .logo_subtitle > p {
@@ -117,9 +116,14 @@ body {
 .grid_section {
   display: grid;
   gap: 80px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
   align-items: center;
+  grid-template-areas: 
+  "s t ."
+  "a t ."
+  ". . ."; 
 }
+
 .air_holder {
   position: relative;
 }
@@ -134,10 +138,10 @@ body {
 .summer {
   position: relative;
 }
-.air-water_el{
+.air-water_el {
   position: relative;
 }
-.water_item{
+.water_item {
   position: absolute;
   bottom: 212px;
   right: -140px;
@@ -383,29 +387,30 @@ nav {
   margin-top: 70px;
   margin-bottom: 120px;
 }
-.air-water-comer{
-  grid-template-columns: 1fr .7fr;
+.air-water-comer {
+  grid-template-columns: 1fr 0.7fr;
 }
 .grid_img > img {
   border-radius: 20px;
   width: 100%;
 }
-.text_list{
+.text_list {
   text-align: left;
   list-style: none;
   padding-left: 0;
 }
-.text_list > li > p{
+.text_list > li > p {
   color: #666;
   font-size: 14px;
 }
-.additional_img_text{
+.additional_img_text {
   display: flex;
   column-gap: 30px;
   list-style: arrow;
   margin-top: 50px;
-  
+  grid-area: water_list;
 }
+
 .text_wrapper {
   background: #fff;
   /* height: 100%; */
@@ -522,8 +527,14 @@ nav {
   color: #fff;
   background: #1055cc;
 }
-.list{
+.list {
   list-style: none;
+}
+.additional_img_text{
+  grid-area: a;
+}
+.grid_section_text{
+  grid-area: t;
 }
 @media (max-width: 762px) {
   .attention {
@@ -531,17 +542,32 @@ nav {
     position: relative;
     z-index: 2;
   }
-  .mob_flex{
+  .grid_section{
+    grid-template-areas: 
+    "s"
+    "t"
+    "a";
+    grid-row: auto;
+    gap: 30px;
+  }
+  .additional_img_text{
+    margin-top: 0;
+  }
+  .air-watter-sub{
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .mob_flex {
     display: flex;
     flex-direction: column-reverse;
   }
-  .additional_img_text{
+  .additional_img_text {
     flex-direction: column;
   }
-  .water_item{
+  .water_item {
     display: none;
   }
-  .how-works-small{
+  .how-works-small {
     display: none;
   }
   .air-watter-sub {
@@ -744,7 +770,7 @@ nav {
 html {
   scroll-behavior: smooth;
 }
-.none{
+.none {
   display: none;
 }
 .btnOn {
@@ -980,4 +1006,13 @@ html {
   .plus {
     font-size: 1.2rem;
   }
+}
+.grid_img{
+  grid-area: s;
+}
+.air-watter-sub{
+  grid-area: a;
+}
+.s_height{
+  grid-area: t;
 }
