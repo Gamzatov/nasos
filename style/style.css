@@ -529,6 +529,9 @@ nav {
     position: relative;
     z-index: 2;
   }
+  .additional_img_text{
+    flex-direction: column;
+  }
   .water_item{
     display: none;
   }
