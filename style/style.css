@@ -784,8 +784,12 @@ html {
 .none {
   display: none;
 }
+.scroll-top{
+  display: none;
+}
 .btnOn {
   position: fixed;
+  display: block;
   bottom: 60px;
   z-index: 2;
   right: 30px;

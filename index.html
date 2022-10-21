@@ -525,7 +525,7 @@
 
     </div>
 </div>
-<button id="btn" class="scroll-top">
+<button id="btn" class="scroll-top btn">
     <ion-icon name="arrow-up-outline"></ion-icon>
 </button>
 <script src="./js/index.js"></script>
@@ -553,8 +553,7 @@
             if ($(window).scrollTop() > 700) {
                 $("#btn").addClass("btnOn");
             } else {
-                //remove the background property so it comes transparent again (defined in your css)
-                $("btn").removeClass("none");
+                $("#btn").removeClass("btnOn");
             }
         });
     });
