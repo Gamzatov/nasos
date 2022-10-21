@@ -551,6 +551,10 @@ nav {
     position: relative;
     z-index: 2;
   }
+
+  .grid_absolute_img{
+    left: -20px;
+  }
   .s_height {
     margin-top: 30px;
   }
@@ -874,6 +878,9 @@ html {
   .mob_attention {
     display: block;
   }
+  .comer_list{
+    padding: 10px;
+  }
   .f_expl {
     padding: 10px;
     margin-top: 30px;
@@ -918,7 +925,7 @@ html {
     cursor: pointer;
   }
   .grid_absolute_img > img {
-    max-width: 350px;
+    max-width: 450px;
   }
   .logo_wrapper {
     flex-direction: column;
