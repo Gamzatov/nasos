@@ -106,7 +106,7 @@ body {
   text-align: right;
 }
 .main_section {
-  background-image: url("../assets/back.png");
+  background-image: url("../assets/back.jpg");
   /* background-attachment: fixed; */
   height: 100vh;
   background-size: cover;
