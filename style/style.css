@@ -531,6 +531,10 @@ nav {
     position: relative;
     z-index: 2;
   }
+  .mob_flex{
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .additional_img_text{
     flex-direction: column;
   }
